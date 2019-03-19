@@ -1,0 +1,52 @@
+name: wyag
+version: "0.1.0"
+about: A stupider content tracker
+author: Martin Manelli <manelli.ml@gmail.com>
+
+settings:
+- ArgRequiredElseHelp
+
+subcommands:
+    - add:
+        about: Add file contents to the index
+
+    - cat-file:
+        about:  Provide content or type and size information for repository objects
+
+    - checkout:
+        about: Switch branches or restore working tree files
+
+    - commit:
+        about: Record changes to the repository
+
+    - hash-object:
+        about: Compute object ID and optionally creates a blob from a file
+
+    - init:
+        about: Create an empty Git repository or reinitialize an existing one
+        with_name: output
+        takes_value: true
+
+    - log:
+        about: Show commit logs
+
+    - ls-tree:
+        about: List the contents of a tree object
+
+    - merge:
+        about: Join two or more development histories together
+
+    - rebase:
+        about: Forward-port local commits to the updated upstream head
+
+    - rev-parse:
+        about: Pick out and massage parameters
+
+    - rm:
+        about: Remove files from the working tree and from the index
+
+    - show-ref:
+        about: List references in a local repository
+
+    - tag:
+        about: Create, list, delete or verify a tag object signed with GPG
